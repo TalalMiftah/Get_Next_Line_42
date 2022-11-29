@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-char	*ft_read(int fd, char *str)
+char	*ft_read(int fd, char *str) 
 {
 	int		bytes;
 	char	*buff;
