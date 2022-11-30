@@ -6,7 +6,7 @@
 /*   By: tmiftah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 17:34:41 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/11/27 17:28:31 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/11/30 15:21:37 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 			return (1);
-	i++;
+		i++;
 	}
 	return (0);
 }
@@ -53,8 +53,6 @@ char	*ft_strjoin(char *s1, char *s2)
 		s1 = malloc(1);
 		s1[0] = '\0';
 	}
-	if (!s1 || !s2)
-		return (NULL);
 	c1 = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!c1)
 		return (NULL);

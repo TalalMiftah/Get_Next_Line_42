@@ -6,13 +6,13 @@
 /*   By: tmiftah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 17:34:23 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/11/28 14:28:11 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/11/30 21:56:54 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_read(int fd, char *str) 
+char	*ft_read(int fd, char *str)
 {
 	int		bytes;
 	char	*buff;
