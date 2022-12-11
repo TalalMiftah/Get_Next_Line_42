@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tmiftah <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/29 15:52:15 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/11/30 16:06:27 by tmiftah          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "get_next_line_bonus.h"
 
 char	*ft_rhyme(char *str)
@@ -95,7 +83,7 @@ char	*get_next_line(int fd)
 	char		*c;
 	static char	*str[OPEN_MAX];
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > OPEN_MAX)
 		return (NULL);
 	str[fd] = ft_read(fd, str[fd]);
 	if (!str[fd])
